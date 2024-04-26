@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/style' %}" />
+    <link rel="stylesheet" href="{% static 'styles/styles' %}" />
+    <link rel="stylesheet" href="{% static 'styles/login' %}">
+    <link rel="shortcut icon" href="../image/photo_2024-02-01_23-48-30.png">
+    <title>Login/Signup</title>
+</head>
+<body>
+  {% block content %}
+ <div class="hero">
+    <a href="../index.html" class="link_home"> <img class="logo2" src="../image/photo_2024-02-01_23-48-30.png"></a>
+        
+    <div class="form-box">
+          {% csrf_token %}
+            <div class="button-box">
+                <div id="btn"></div>
+                <button class="toggle-btn" onclick="login()">login</button>
+                <button class="toggle-btn" onclick="register()">Signup</button>
+            </div>
+
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="user name">
+                <input type="password" class="input-field" placeholder="password">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">forget password</label>
+                <input type="submit" value="Submit">
+            </form>
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="user name">
+                <input type="password" class="input-field" placeholder="password">
+                <input type="password" class="input-field" placeholder="confirm pasword">
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+    </div>
+    <!-- <script src="../js/all.js"> </script> -->
+    <script src="{% static 'myapp/js/login' %}"></script>
+    {% endblock %}
+</body>
+</html>

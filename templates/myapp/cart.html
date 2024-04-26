@@ -1,0 +1,140 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'myapp/styles/style' %}" />
+    <link rel="stylesheet" href="{% static 'myapp/styles/styles' %}" />
+
+    <link rel="shortcut icon" href="./image/photo_2024-02-01_23-48-30.png">
+
+    <title>Shopping Card</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        
+        <nav style="width: 98%;">
+        
+            <div class="cart__count">
+                <i class="fa fa-shopping-cart"></i>
+                <div class="total__counter">0</div>
+            </div>
+            <div>
+                <a href="./index.html" class="link_home"> <img src="./image/photo_2024-02-01_23-48-30.png" class="logo2"> </a>
+            </div>
+            <!-- <div class="search" style="border-radius: 15px">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="...search"
+                  style="border-radius: 15px"
+                />
+                <button class="btn" style="border-radius: 15px">
+                  <i class="fas fa-search"></i>
+                </button> -->
+        </nav>
+
+        <div class="cart">
+            <div class="cart__items">
+
+
+                <div class="check_out">
+                    <h4 class="total-price">total:</h4>
+                    <h4 class="total__cost">0</h4>
+                    T
+                    
+                  <a href="./checkout.html" class="link_home"> <button class="btn_checkout"> checkout</button></a>
+                    <button class="btn check_out_btn btn__remove"> remove all</button>
+                    
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div class="products" style="background-color: #e3dfe4;">
+        <div class="product__element">
+            <input type="hidden" id="product_id" value="1">
+            <img src="./image/mahsol1.jpg" id="image" alt="">
+
+            <h4 class="product__name"> flowers</h4>
+            <div class="many">
+           
+             <h5 class="product__price">90000</h5>
+                
+            </div>
+            <div id="submitBtn"  class="btn_add_to_cart" onclick="showMessage()">Add</div>
+            <div id="messageDiv"><i class="far fa-grin"></i>
+                !Added to cart successfully</div>
+        </div>
+        <div class="product__element">
+            <input type="hidden" id="product_id" value="2">
+            <img src="./image/mahsol6.jpg" id="image" alt="">
+            <h4 class="product__name">flowers</h4>
+            <div class="many">
+                <h5 class="product__price2">80000 T</h5>
+                <h5 class="product__price discount-price"> 70000 T</h5>
+            </div>
+            <div id="submitBtn" class="btn_add_to_cart" onclick="showMessage()">Add</div>
+            <div id="messageDiv"><i class="far fa-grin"></i>
+                !Added to cart successfully</div>
+        </div>
+        <div class="product__element">
+            <input type="hidden" id="product_id" value="3">
+            <img src="./image/mahsol3.jpg" id="image" alt="">
+            <h4 class="product__name">flowers</h4>
+            <div class="many">
+                <h5 class="product__price2">70000 T</h5>
+                <h5 class="product__price discount-price"> 60000 T</h5>
+            </div>
+            <div id="submitBtn" class="btn_add_to_cart" onclick="showMessage()">Add</div>
+            <div id="messageDiv"><i class="far fa-grin"></i>
+                !Added to cart successfully</div>
+        </div>
+        <div class="product__element">
+            <input type="hidden" id="product_id" value="4">
+            <img src="./image/flower2.jpg" id="image" alt="">
+            <h4 class="product__name">flowers</h4>
+            <div class="many">
+                <h5 class="product__price">100000 T</h5>
+                
+            </div>
+            <div id="submitBtn" class="btn_add_to_cart" onclick="showMessage()">Add</div>
+            <div id="messageDiv"><i class="far fa-grin"></i>
+                !Added to cart successfully</div>
+        </div>
+        <div class="product__element">
+            <input type="hidden" id="product_id" value="5">
+            <img src="./image/mahsol5.jpg" id="image" alt="">
+            <h4 class="product__name">flowers</h4>
+            <div class="many">
+                <h5 class="product__price">85000 T</h5>
+               
+            </div>
+            <div id="submitBtn" class="btn_add_to_cart" onclick="showMessage()">Add</div>
+            <div id="messageDiv"><i class="far fa-grin"></i>
+               !Added to cart successfully</div>
+        </div>
+        <div class="product__element">
+            <input type="hidden" id="product_id" value="6">
+            <img src="./image/mahsol4.jpg" id="image" alt="">
+            <h4 class="product__name">flowers</h4>
+            <div class="many">
+                <h5 class="product__price2">90000 T</h5>
+                <h5 class="product__price discount-price"> 80000 T</h5>
+            </div>
+            <div id="submitBtn" class="btn_add_to_cart" onclick="showMessage()">Add</div>
+            <div id="messageDiv"><i class="far fa-grin"></i>
+                !Added to cart successfully</div>
+        </div>
+    </div>
+</div>
+<script src="./js/main.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/cart.js"></script>
+{% endblock %}
+</body>
+</html>

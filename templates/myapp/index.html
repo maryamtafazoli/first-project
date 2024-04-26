@@ -1,0 +1,229 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Violet</title>
+    <link rel="stylesheet" href="{% static 'myapp/styles/style' %}" />
+    <link rel="stylesheet" href="{% static 'myapp/styles/styles' %}"/>
+    <link rel="stylesheet" href="{% static 'myapp/styles/hamburgar' %}" />
+    <link rel="shortcut icon" href="./image/photo_2024-02-01_23-48-30.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="background">
+     <a href="./index.html" class="link_home"> <img class="logo" src="./image/photo_2024-02-01_23-48-30.png"></a>
+      <div class="search" style="border-radius: 15px">
+        <input
+          type="text"
+          class="input"
+          placeholder="...search"
+          style="border-radius: 15px"
+        />
+        <button class="btn" style="border-radius: 15px">
+          <i class="fas fa-search"></i>
+        </button>
+        <a href="./cart.html" class="link_home"><i class="fa fa-shopping-cart  nav_icon"></i></a>
+        <a href="./login/login.html" class="link_home"><i class='fas fa-user-alt nav_icon2'></i></a>
+
+      </div>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    
+      <div class="inner-background">
+       
+        <!-- <img src="./image/gol_naz.jpg" class="image"> -->
+        <div class="slider">
+          <div class="slider-items">
+            <div class="item active">
+              <div
+                class="img"
+                style="background-image: url('./image/gol_naz.jpg')"
+              ></div>
+              <!-- <div class="caption">
+                        <div class="text">
+                            <h2>هدینگ اسلاید اول</h2>
+                            <p>این هدینگ اسلاید اول است و عالی میباشد.</p>
+                        </div>
+                    </div> -->
+            </div>
+            <div class="item">
+              <div
+                class="img"
+                style="background-image: url('./image/flower3.jpg')"
+              ></div>
+              <!-- <div class="caption">
+                        <div class="text">
+                            <h2>هدینگ اسلاید دوم</h2>
+                            <p>این هدینگ اسلاید اول است و عالی میباشد.</p>
+                        </div>
+                    </div> -->
+            </div>
+            <div class="item">
+              <div
+                class="img"
+                style="background-image: url('./image/flower4.jpg')"
+              ></div>
+              <!-- <div class="caption">
+                        <div class="text">
+                            <h2>هدینگ اسلاید سوم</h2>
+                            <p>این هدینگ اسلاید اول است و عالی میباشد.</p>
+                        </div>
+                    </div> -->
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="next"><i class="fas fa-chevron-right"></i></div>
+            <div class="prev"><i class="fas fa-chevron-left"></i></div>
+          </div>
+
+          <div class="progress"></div>
+        </div>
+        <p class="paragraph">
+          <b>Flowers</b> grow in dark <br />
+          !...moments
+        </p>
+      </div>
+
+
+
+      
+      <div class="main">
+        <h2 class="text" style="color: #e3dfe4;">Top Seller</h2>
+        <div class="products product_search" style="background-color:#68546c">
+          <div class="product__element">
+              <input type="hidden" id="product_id" value="1">
+              <img src="./image/mahsol1.jpg" id="image" alt="">
+  
+              <h4 class="product__name"> flowers</h4>
+              <div class="many">
+                  <h5 class="product__price">90000 T</h5>
+                 
+                  <h5></h5>
+              </div>
+              <div class="btn_add_to_cart"><a href="./cart.html" class="link_home"><i class="fa fa-shopping-cart"></i></a></div>
+          </div>
+          <div class="product__element">
+              <input type="hidden" id="product_id" value="2">
+              <img src="./image/gol_naztar.jpg" id="image" alt="">
+              <h4 class="product__name">flowers</h4>
+              <div class="many">
+                  <h5 class="product__price">80000 T</h5>
+                  <br>
+                  <!-- <h5> 65000</h5> -->
+              </div>
+              <div class="btn_add_to_cart"><a href="./cart.html" class="link_home"><i class="fa fa-shopping-cart"></i></a></div>
+          </div>
+          <div class="product__element">
+              <input type="hidden" id="product_id" value="3">
+              <img src="./image/flower2.jpg" id="image" alt="">
+              <h4 class="product__name">flowers</h4>
+              <div class="many">
+                  <h5 class="product__price">65000 T</h5>
+                 
+              </div>
+              <div class="btn_add_to_cart"><a href="./cart.html" class="link_home"><i class="fa fa-shopping-cart"></i></a></div>
+          </div>
+      </div>
+
+
+
+
+
+
+      <div class="main2">
+        <h2 class="text" style="color: #453848;">Special offers</h2>
+        <span class="flag-discount">20% Off</span>
+        <div class="products product_search" style="background-color: #e3dfe4;">
+          <div class="product__element">
+              <input type="hidden" id="product_id" value="1">
+              <img src="./image/mahsol3.jpg" id="image" alt="">
+  
+              <h4 class="product__name"> flowers</h4>
+              <div class="many">
+                  <h5 class="product__price2">90000 T</h5>
+                  <h5 class="product__price discount-price"> 80000 T</h5>
+                  
+              </div>
+              <div class="btn_add_to_cart"><a href="./cart.html" class="link_home"><i class="fa fa-shopping-cart"></i></a></div>
+          </div>
+          <div class="product__element">
+              <input type="hidden" id="product_id" value="2">
+              <img src="./image/mahsol4.jpg" id="image" alt="">
+              <h4 class="product__name">flowers</h4>
+              <div class="many">
+                  <h5 class="product__price2">80000 T</h5>
+                  
+                  <h5 class="product__price discount-price"> 70000 T</h5>
+              </div>
+              <div class="btn_add_to_cart"><a href="./cart.html" class="link_home"><i class="fa fa-shopping-cart"></i></a></div>
+          </div>
+          <div class="product__element">
+              <input type="hidden" id="product_id" value="3">
+              <img src="./image/mahsol6.jpg" id="image" alt="">
+              <h4 class="product__name">flowers</h4>
+              <div class="many">
+                  <h5 class="product__price2">65000 T</h5>
+                 <h5 class="product__price discount-price"> 60000 T</h5>
+              </div>
+              <div class="btn_add_to_cart"><a href="./cart.html" class="link_home"><i class="fa fa-shopping-cart"></i></a></div>
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="footer">
+        <div class="icon">
+          <i class="fab fa-instagram" style="font-size: 36px"></i>
+          <i class="fab fa-facebook" style="font-size: 36px"></i>
+          <!-- <i class='fas fa-phone-alt' style='font-size:36px'></i> -->
+          <i class="far fa-grin" style="font-size: 36px"></i>
+        </div>
+      </div>
+      <div class="felan"></div>
+
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav" style="background-color: #583a5e">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./login/login.html">Login</a></li>
+            <li><a href="./login/login.html">Register</a></li>
+            <li><a href="cart.html">Shopping Card</a></li>
+          </ul>
+        </nav>
+      </div>
+   
+      <div class="menu-bg" id="menu-bg"></div>
+    </div>
+
+    <script src="./js/all.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/hamburgar.js"></script>
+    <script src="./js/slider.js"></script>
+    {% endblock %}
+  </body>
+</html>

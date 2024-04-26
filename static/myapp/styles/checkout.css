@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "fontlight";
+    src: url(../font/Poppins-Light.ttf);
+  }
+body {
+    font-family: "fontlight";
+    background-color: #b9aebc;
+}
+
+.form-container {
+    background-color: #f1eff2;
+    width: 400px;
+    height: 500px;
+    margin: 5rem auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 15px;
+    /* font-weight: bold; */
+
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container select 
+{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.form-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#messageDiv {
+  display: none;
+  padding: 20px;
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  /* transform: translateX(-50%);
+  z-index: 9999; */
+  background-color: #d4edda;
+  border-color: #c3e6cb;;
+  color: #155724;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+}
+ 
+.logo{
+    width: 270px;
+    height: 150px;
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    
+}

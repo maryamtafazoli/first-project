@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/photo_2024-02-01_23-48-30.png">
+    <link rel="stylesheet" href="{% static 'myapp/styles.checkout' %}" />
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Checkout</title>
+</head>
+<body>
+   <a href="./index.html"> <img class="logo" src="./image/photo_2024-02-01_23-48-30.png"></a>
+    <!-- <img class="logo" src="./image/logo.png"> -->
+    
+    <div class="form-container">
+        <h2>Checkout</h2>
+        <form id="checkoutForm">
+            <label for="fullName">fullName:</label>
+            <input type="text" id="fullName" name="fullName" required>
+    
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="address">address:</label>
+            <textarea id="address" name="address" required></textarea>
+    
+            <label for="paymentMethod">Payment Method :</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value=""> select </option>
+                <option value="cash">cash</option>
+                <option value="creditCard"> credit card</option>
+            </select>
+    
+          
+           
+        </form>
+        
+         <button onclick="showMessage()" type="submit">confirmation</button> 
+         <div id="messageDiv"><i class="far fa-grin"></i>
+            !Operation completed successfully
+        </div>
+    </div>
+    <script src="./js/checkout.js"></script>
+    {% endblock %}
+</body>
+</html>
